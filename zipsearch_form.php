@@ -1,13 +1,13 @@
 <?php
+session_start();
 //////検索フォーム表示関数//////////
 //function zip_search_form($trb){  
  
-session_start();
  require_once "include/db_connect.php";
      
      
- global $pdir9; global $baitai_ID;
  global $juchu;  global $prefs;   //global $wpdb;
+ global $pdir9; global $baitai_ID;
  
   $prefs =  $_SESSION['prefs'];
   $trb= explode('/',$_POST['baitai']);
@@ -47,7 +47,7 @@ session_start();
       $kiji_count += array( $pref_kanji => $value['kiji_count']);
     }
   
- //var_dump( $pref_kanji ); exit();  
+ var_dump( $pref_kanji ); exit();  
   //{ '東京都' => int(53) '千葉県' => int(8) '福島県' => int(11) '神奈川県' => int(57)     
   // 都道府県をリンクで
      $k=0; $i=0;
