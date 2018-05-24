@@ -46,7 +46,7 @@ $pdir9 = "/wp-content/plugins/wp-construction-ex" ; //puraguin URL  plugins_url(
     array_push($shojo['glas'],'all');
     array_push($shojo['key'],'all');
    
-  $ssurl='https://www.sscgm.com/sirius';
+  $ssurl='https://www.********.com/sirius';
    
 
 
